@@ -19,8 +19,6 @@ public class ClassReader2 {
         readStream(inputStream, true);
     }
 
-    // The following code is licensed differently than the standard LICENSE file for this repository indicates.
-
     // ASM: a very small and fast Java bytecode manipulation framework
     // Copyright (c) 2000-2011 INRIA, France Telecom
     // All rights reserved.
@@ -50,11 +48,11 @@ public class ClassReader2 {
     // THE POSSIBILITY OF SUCH DAMAGE.
 
     /**
-     * Code copied from:
-     * https://github.com/spring-projects/spring-framework/blob/d29d4d45aa31dedb176370cad1ca05bfb83846a0/spring-core/src/main/java/org/springframework/asm/ClassReader.java
+     * Source:
+     * - https://github.com/spring-projects/spring-framework/blob/d29d4d45aa31dedb176370cad1ca05bfb83846a0/spring-core/src/main/java/org/springframework/asm/ClassReader.java
+     * - https://gitlab.ow2.org/asm/asm/-/blob/1412c762620b71f31e4c76ece5c41d415084b299/asm/src/main/java/org/objectweb/asm/ClassReader.java
      * Modifications made to the original code:
      * - added System.out.println statements to understand what's happening.
-     * The code has been used here for the purpose of creating reproduction steps for the issue.
      */
     private static final int MAX_BUFFER_SIZE = 1024 * 1024;
     private static final int INPUT_STREAM_DATA_CHUNK_SIZE = 4096;
